@@ -1,6 +1,7 @@
 # Importing necessary libraries
 import pandas
 import requests
+import snowflake.connector
 import streamlit
 
 # Using Streamlit to create a title for the web application
