@@ -37,7 +37,7 @@ fruit_choice = streamlit.text_input('What fruit would you like information about
 streamlit.write('The user entered ', fruit_choice)
 
 # Making an HTTP GET request to an API for information about watermelon
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" = fruit_choice)
 
 # Normalizing the JSON data to create a flat table and loading it into a Pandas DataFrame
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
