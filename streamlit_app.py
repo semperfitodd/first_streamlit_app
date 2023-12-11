@@ -37,9 +37,6 @@ streamlit.header("Fruityvice Fruit Advice!")
 # Making an HTTP GET request to an API for information about watermelon
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 
-# Displaying the raw JSON response from the API call
-streamlit.text(fruityvice_response.json())
-
 # Normalizing the JSON data to create a flat table and loading it into a Pandas DataFrame
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 
